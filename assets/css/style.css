@@ -130,6 +130,117 @@ body{
 }
 
 
+/* Reused Styles ---------------> */
+
+.section .container{
+    padding-inline: 15px;
+}
+
+.section{
+    padding-block: var(--section-padding);
+}
+
+.h1,
+.h2,
+.h3,
+h4{
+    color: var(--rich-black-fogra-29);
+}
+
+
+.h1{
+    font-size: var(--fs-1);
+    font-weight: var(--fw-300);
+    line-height: 1.5;
+}
+
+.h2{
+    font-size: var(--fs-2);
+}
+
+.h3{
+    font-size: var(--fs-4);
+}
+
+.h4{
+    font-size: var(--fs-5);
+    text-transform: uppercase;
+}
+
+.btn{
+    background: #e85a5a;
+    color: var(--white);
+    font-size: var(--fs-5);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 14px 25px;
+    border: 1px solid var(--bittersweet);
+    transition: var(--transition-1);
+    border-radius: 5px;
+}
+
+.btn-primary:hover{
+    background: #ff6b6b;
+}
+
+.btn-primary:focus{
+    background: #ff6b6b;
+}
+
+.btn-secondary{
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+.btn-secondary:hover{
+    background: hsla(0, 0%, 0%, 0.1);
+}
+.btn-secondary:focus{
+    background: hsla(0, 0%, 0%, 0.1);
+}
+
+.has-scrollbar{
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    scroll-snap-type: mandatory;
+}
+
+.has-scrollbar li{
+    min-width: 100%;
+    scroll-snap-align: start;
+}
+
+.has-scrollbar::-webkit-scrollbar{
+    height: 10px;
+}
+
+.has-scrollbar::-webkit-scrollbar-track{
+    background: var(--white);
+    border-radius: 20px;
+    outline: 2px solid #e85a5a;
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb{
+    background: #e85a5a;
+    border-radius: 20px;
+    border: 2px solid var(--white);
+}
+
+.has-scrollbar::-webkit-scrollbar-button{
+    width: 40px;
+}
+
+
+
+/* ----------------------v----------------- */
+
+
+
+
 /* Header section stling start here ---------> */
 
 .container{
@@ -348,8 +459,47 @@ body{
     border-radius: 50%;
 }
 
+/* Hero Section Styling Start Here */
+
+.hero{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hero .hero-title{
+    margin-bottom: 10px;
+}
+
+.hero .hero-title strong{
+    display: block;
+}
+
+.hero .container .hero-text{
+    color: var(--onyx);
+    font-family: var(--ff-roboto);
+    font-size: var(--fs-8);
+    line-height: 1.6;
+    max-width: 46ch;
+    margin-bottom: 25px;
+}
 
 
+/* ---> Collection Styling Start Here -------------> */
 
-
+.collection-card{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: center;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 45px 25px;
+}
 
