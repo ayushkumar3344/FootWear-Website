@@ -868,7 +868,6 @@ h4{
 /* #FOOTER Section Styling Start Here ---------------> */
 
 .footer{
-    border: 3px solid darkblue;
     font-family: var(--ff-roboto);
 }
 
