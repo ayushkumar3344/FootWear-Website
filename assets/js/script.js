@@ -22,3 +22,23 @@ navElements.forEach((item) => {
 });
 
 // ------------------------------------->
+
+
+// header and Go top button active on page scroll --->
+
+const header = document.querySelector("[data-header]"),
+      goTopBtn = document.querySelector("[data-go-top]")
+
+
+
+window.addEventListener("scroll",() => {
+
+    if(window.scrollY > 400){
+        header.classList.add("active");
+        goTopBtn.classList.add("active");
+    } else{
+        header.classList.remove("active");
+        goTopBtn.classList.remove("active");
+    }
+
+})

@@ -1008,3 +1008,32 @@ a.footer-link:focus{
     display: inline-block;
 }
 
+
+
+/* #GO TOP */
+
+.go-top-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #e85a5a;
+    color: var(--white);
+    font-size: 20px;
+    padding: 10px;
+    border: 4px solid var(--white);
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-1);
+    z-index: 2;
+}
+
+.go-top-btn.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.go-top-btn:hover,
+.go-top-btn:focus{
+    background: #822d2d;
+}
