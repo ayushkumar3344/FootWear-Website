@@ -825,3 +825,38 @@ h4{
     display: inline-block;
     color: #e85a5a;
 }
+
+
+/* INSTA POST Styling section Start Here ------------------>  */
+
+
+.insta-post-list{
+    gap: 0;
+}
+
+.insta-post-list .insta-post-item{
+    position: relative;
+    min-width: 33.33%;
+    aspect-ratio: 1/1;
+}
+
+.insta-post-list .insta-post-link{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--oxford-blue_60);
+    opacity: 0;
+    transition: var(--transition-1);
+}
+
+.insta-post-list .insta-post-link i{
+    color: var(--white);
+    font-size: 40px;
+}
+
+.insta-post-link:hover,
+.insta-post-link:focus{
+    opacity: 1;
+}
