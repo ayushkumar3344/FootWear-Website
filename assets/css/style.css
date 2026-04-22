@@ -860,3 +860,152 @@ h4{
 .insta-post-link:focus{
     opacity: 1;
 }
+
+
+
+
+
+/* #FOOTER Section Styling Start Here ---------------> */
+
+.footer{
+    border: 3px solid darkblue;
+    font-family: var(--ff-roboto);
+}
+
+.footer-top{
+    background: var(--cultured);
+}
+
+.footer-brand{
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--gainsboro);
+    margin-bottom: 50px;
+}
+
+.footer-brand .logo{
+    margin-bottom: 15px;
+}
+
+.social-list{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-link{
+    background: gainsboro;
+    color: var(--onyx);
+    font-size: 20px;
+    padding: 10px;
+    transition: var(--transition-1);
+}
+
+.social-link:hover,
+.social-link:focus{
+    background-color: #e85a5a;
+    color: var(--white);
+}
+
+.footer-list-title{
+    position: relative;
+    color: var(--rich-black-fogra-29);
+    font-family: var(--ff-josefin-sans);
+    font-size: var(--fs-3);
+    font-weight: var(--fw-700);
+    margin-bottom: 25px;
+}
+
+.footer-list-title::after{
+    content: "";
+    display: block;
+    background: #e85a5a;
+    width: 50px;
+    height: 2px;
+    margin-top: 10px;
+}
+
+.footer-link{
+    color: var(--onyx);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-block: 6px;
+    transition: var(--transition-1);
+}
+
+a.footer-link:hover,
+a.footer-link:focus{
+    color: #e85a5a;
+}
+
+.footer-link-text{
+    flex: 1;
+}
+
+.footer-list:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.footer-list:first-child i{
+    color: #e85a5a;
+    font-size: 22px;
+}
+
+
+.table-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    padding-block: 6px;
+}
+
+.table-head{
+    color: var(--rich-black-fogra-29);
+    font-weight: 600;
+}
+
+.table-data{
+    color: var(--onyx);
+}
+
+
+
+.newsletter-text{
+    color: var(--onyx);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.newsletter-form{
+    position: relative;
+}
+
+.newsletter-input{
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: var(--onyx);
+    padding: 15px 25px;
+    padding-right: 120px;
+    margin-bottom: 15px;
+}
+
+/* footer bottom ----> */
+
+.footer-bottom{
+    background: rgb(37, 35, 35);
+    padding-block: 20px;
+    color: white;
+}
+
+.copyright{
+    text-align: center;
+    color: var(white);
+    font-size: 18px;
+}
+
+.copyright-text{
+    color: #e85a5a;
+    display: inline-block;
+}
+
