@@ -1037,3 +1037,262 @@ a.footer-link:focus{
 .go-top-btn:focus{
     background: #822d2d;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------>
+    MEDIA QUERES
+<------------*/
+
+
+/* Responsive for larger than 575px Screen */
+
+
+
+@media ( min-width: 575px ) { 
+
+    /* CUSTOM PROPERTIES */
+
+    
+    :root{
+
+        /* #typography--> */
+
+        --fs-1: 4rem;
+
+    }
+
+    /* #Hero */
+
+    .hero-text{
+        font-size: var(--fs-7);
+    }
+
+    /* reused style */
+
+    .container{
+        max-width: 650px;
+        width: 100%;
+        margin-inline: auto;
+    }
+
+    .has-scrollbar li{
+        min-width: calc(50% - 12.5px);
+    }
+
+    /* #Product */
+
+    .product-list{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+
+    /* CTA */
+
+    .cta-card{
+        text-align: left;
+    }
+
+    .cta-card .card-title{
+        max-width: 14ch;
+    }
+
+    .cta-card .btn-link{
+        margin-inline: 0;
+    }
+
+    /* INSTA POST */
+
+    .insta-post-list .insta-post-item{
+        min-width: 25%;
+    }
+
+    /* FOOTER */
+
+    .footer-brand .logo{
+        margin-bottom: 0;
+    }
+
+    .footer-brand{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-link-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+    }
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+/* Responsive for larger than 768px Screen */
+
+
+
+@media ( min-width: 768px ) { 
+
+    /* CUSTOM PROPERTIES */
+
+    
+   :root{
+
+    /* Typography */
+
+    --fs-2: 3rem;
+
+   }
+
+   /* Reused Style */
+
+   .container{
+    max-width: 720px;
+   }
+
+   .h4{
+    font-size: 2rem;
+   }
+
+  /* INSTA POST */
+
+  .insta-post-list.insta-post-item{
+    min-width: 20%;
+  }
+
+  /* GO TOP */
+
+  .go-top-btn{
+    padding: 15px;
+    border-width: 6px;
+    bottom: 30px;
+    right: 30px;
+  }
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+/* Responsive for larger than 1200px Screen */
+
+
+
+@media ( min-width: 1200px ) { 
+
+    /* CUSTOM PROPERTIES */
+
+    
+   :root{
+
+    /* Typography */
+
+    --fs-1: 5rem;
+    --fs-2: 3.6rem;
+
+   }
+
+
+
+   /* HEADER ---> */
+
+   .container{
+    padding-inline: unset;
+   }
+
+
+
+
+
+
+   /* REUSED STYLE --->  */
+
+   .container{
+    max-width: 1280px;
+   }
+
+   /* hero ---> */
+
+   .hero{
+    height: 580px;
+   }
+
+   .hero .container{
+    max-width: 1000px;
+   }
+
+   .hero-text{
+    font-size: var(--fs-6);
+    max-width: 50ch;
+   }
+
+
+
+   /* PRODUCT */
+
+   .product-list{
+    grid-template-columns: repeat(4,1fr);
+   }
+
+
+
+    
+}
+
+ 
